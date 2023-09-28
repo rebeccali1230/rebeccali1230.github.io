@@ -2,7 +2,7 @@
 const firstName = 'Rebecca'
 
 // concatenate variable
-console.log(`My name is ${firstName}`)
+console.log(`My name is ` + firstName)
 
 // declare variable 
 const favNumber = 8
