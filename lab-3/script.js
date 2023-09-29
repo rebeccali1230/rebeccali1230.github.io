@@ -67,7 +67,7 @@ const game = {
   // Player goes to sleep and end the game
   function sleep() {
     if (game.tent && !game.fire) {
-      console.log("You went to sleep.");
+      return "You went to sleep.";
 
       // Reset the game properties
       game.wood = 0;
@@ -75,11 +75,11 @@ const game = {
       game.fire = false;
       game.tent = false;
     } else if (!game.tent && !game.fire ) {
-      console.log("Restart the game by pitch again.");}
+      return "Restart the game by pitch again.";}
       else if (game.tent && game.fire ) {
-      console.log("You need to put out the fire.");}
+      return "You need to put out the fire.";}
       else {
-      console.log("You need to pitch first.");}
+      return "You need to pitch first.";}
     }
 
   
