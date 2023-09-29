@@ -68,16 +68,22 @@ const game = {
   function sleep() {
     if (game.tent && !game.fire) {
       console.log("You went to sleep.");
+
       // Reset the game properties
       game.wood = 0;
       game.marshmallows = 3;
       game.fire = false;
       game.tent = false;
-    } else {
-      console.log("You need to put out the fire.");
+    } else if (!game.tent && !game.fire ) {
+      console.log("Restart the game by pitch again.");}
+      else if (game.tent && game.fire ) {
+      console.log("You need to put out the fire.");}
+      else {
+      console.log("You need to pitch first.");}
     }
-  }
+
   
-  // Display game instructions at the start
-  help();
+  
+
+  
   
