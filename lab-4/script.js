@@ -21,6 +21,7 @@ function setFontColor(color) {
 function setTheme(themeName) {
     const validThemes = ['theme1', 'theme2']; // create two different themes
     const body = document.body;
+    document.body.style.backgroundColor ='';
 
     // check if its a valid theme
     if (validThemes.includes(themeName)) {
