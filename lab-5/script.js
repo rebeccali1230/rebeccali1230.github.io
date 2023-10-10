@@ -14,27 +14,34 @@ function addBook(title, author, genre) {
   bookCatalog.push(newBook);
 
   // Return a response indicating that the book is added to the catalog
-  return `${title} by ${author} in the ${genre} genre has been added to the catalog.`;
+  return "Book added.";
 }
 
 // Define the showBooks() function
 function showBooks() {
-    // Check if there are books in the catalog
-    if (bookCatalog.length === 0) {
-      return "The catalog is empty.";
-    }
-  
-    // Initialize an empty string to store book information
-    let bookList = "";
-  
-    // Loop through the book catalog and build the list
-    for (const book of bookCatalog) {
-      bookList += `${book.title} by ${book.author} in the ${book.genre} genre\n`;
-    }
-  
-    return bookList;
-  }  
+  // Check if the book catalog is empty
+  if (bookCatalog.length === 0) {
+    return "The catalog is empty.";
+  }
 
+  // Initialize an empty string to store book information
+  let bookList = "";
 
-// Check the updated book catalog
-console.log(showBooks());
+  // Loop through the book catalog and build the list
+  for (let i = 0; i < bookCatalog.length; i++) {
+    bookList += `Index ${i}: ${bookCatalog[i].title}\n`;
+  }
+
+  return bookList;
+}
+
+// Define the showBook() function
+function showBook(index) {
+  // Check if the index is valid
+  if (index >= 0 && index < bookCatalog.length) {
+    const book = bookCatalog[index];
+    return `Title: ${book.title}\nAuthor: ${book.author}\nGenre: ${book.genre}`;
+  } else {
+    return "Invalid index. Please provide a valid index.";
+  }
+}
