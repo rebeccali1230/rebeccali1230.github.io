@@ -22,17 +22,12 @@ function showBooks() {
   // Check if the book catalog is empty
   if (bookCatalog.length === 0) {
     return "The catalog is empty.";
+  } else {
+    // Loop through the book catalog and print the list
+    for (let i = 0; i < bookCatalog.length; i++) {
+      console.log(`${i}: ${bookCatalog[i].title}`);
+    }
   }
-
-  // Initialize an empty string to store book information
-  let bookList = "";
-
-  // Loop through the book catalog and build the list
-  for (let i = 0; i < bookCatalog.length; i++) {
-    bookList += `Index ${i}: ${bookCatalog[i].title}\n`;
-  }
-
-  return bookList;
 }
 
 // Define the showBook() function
@@ -40,7 +35,9 @@ function showBook(index) {
   // Check if the index is valid
   if (index >= 0 && index < bookCatalog.length) {
     const book = bookCatalog[index];
-    return `Title: ${book.title}\nAuthor: ${book.author}\nGenre: ${book.genre}`;
+    console.log(`Title: ${book.title}`);
+    console.log(`Author: ${book.author}`);
+    console.log(`Genre: ${book.genre}`);
   } else {
     return "Invalid index. Please provide a valid index.";
   }
