@@ -1,11 +1,45 @@
-/* Theme 1 */
-.theme1 {
-    background-color: #f7dff3;
-    color: #7b7676;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-/* Theme 2 */
-.theme2 {
-    background-color: #a7d3ed;
-    color: #EFEFEF;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.emoji-card {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.emoji-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.emoji {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.emoji-name {
+    text-align: center;
 }
