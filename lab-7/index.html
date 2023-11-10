@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CST8209 Lab 7</title>
     <link rel="stylesheet" href="style.css">
-    <script src="counters.js" defer></script>
-    <script src="script.js" defer></script>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #beanCounterList {
+            width: 100%;
+            max-width: 600px; 
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="beanCounterList">
+        <h1>Bean Counter Dashboard</h1>
+    </div>
+    <script src="counters.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
