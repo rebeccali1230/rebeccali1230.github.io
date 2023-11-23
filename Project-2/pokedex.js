@@ -8,7 +8,7 @@ const pokedex = [{
     Defense: 49,
     'Sp. Attack': 65,
     'Sp. Defense': 65,
-    Speed: 45
+    Speed: 45 
   },
   url: 'https://www.pokemon.com/us/pokedex/bulbasaur',
   sprite: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'
