@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color of the Day</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        #history {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #history > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        #history > div > span {
+            margin-right: 10px;
+        }
+
+        #history > div > button {
+            margin-left: 10px;
+        }
+
+        input[type="date"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+            width: 600px;
+            height: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            padding: 0 15px 0 15px;
+            border-radius: 5px;
+            border: none;
+            background-color: #4181f9;
+            cursor: pointer;
+            height: 40px;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .display {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .display > h2 {
+            margin-right: 680px;
+        }
+
+        #clear {
+           margin-left: 680px;
+           background-color: lightgrey;
+           color: rgb(166, 165, 165);
+        }
+
+        #clear:hover {
+           margin-left: 680px;
+           background-color: rgb(166, 165, 165);
+           color: rgb(126, 125, 125) 
+        }
+
+        #history {
+            justify-self: auto;
+            width: calc(100% - 150px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Color of the Day</h1>
+    <form id="form">
+        <input type="date" id="date">
+        <button type="submit">Get Color</button>
+    </form>
+
+    <div class="display">
+        <h2>History</h2>
+        <button id="clear">Clear</button>
+        <div id="history"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
