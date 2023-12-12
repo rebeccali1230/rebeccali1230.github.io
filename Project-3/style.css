@@ -1,0 +1,115 @@
+.contain{
+    padding: 30px;
+}
+.contain .form-contain{
+    background: #eee;
+    padding: 20px;
+}
+.contain .form-contain .title{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input{
+    width: 100%;
+}
+#apodForm{
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff;
+}
+#apodDisplay{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+#apodDisplay .left{
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+}
+
+#apodDisplay .right{
+    flex: 1;
+}
+
+li {
+    list-style-type: none;
+}
+#favoritesSection{
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+#favoritesSection li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    padding: 20px 40px;
+}
+#favoritesSection img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 40px;
+}
+#favoritesSection .title {
+    font-weight: bold;
+    font-size: 20px;
+}
+#favoritesSection .data {
+    font-size: 12px;
+    font-style: oblique 45deg;
+}
+
+#favoritesSection ul {
+    padding-left: 0;
+}
+#favoritesSection ul li {
+    margin-bottom: 10px;
+}
+button{
+    display: inline-block;
+    line-height: 0.5;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    transition: .1s;
+    font-weight: 500;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.primary{
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff
+}
+input{
+    height: 30px;
+    margin-bottom: 20px;
+}
+.del{
+    color: #fff;
+    background-color: red;
+    border-color: red;
+}
+.list button{
+    margin-top: 10px;
+}
+#apodDisplay #img{
+    width: 400px;
+    height: 400px;
+}

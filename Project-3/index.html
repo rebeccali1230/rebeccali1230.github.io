@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA APOD Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="contain">
+    <h1>APOD Search</h1>
+    <div class="form-contain">
+        <div class="title">Enter a date</div>
+<!--        <form id="apodForm">-->
+<!--            <label>-->
+            <input  id="dateInput" type="date" max="" required />
+<!--            </label>-->
+            <button id="apodForm" type="submit">Get APOD</button>
+<!--        </form>-->
+    </div>
+
+
+    <div id="apodDisplay" style="display: none">
+        <img class="left" id="img" src="" alt="" style="display: none">
+        <div class="right">
+            <h3 id="title" class="title"></h3>
+            <p id="data" class="data"></p>
+            <p id="main"></p>
+            <button id="addFavorites" class="primary" onclick="saveToFavorites()" type="submit">Save to Favorites</button>
+        </div>
+    </div>
+    <div id="favoritesSection">
+        <h1>Favorites</h1>
+        <ul id="list" class="list">
+        </ul>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
